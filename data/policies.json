@@ -1,0 +1,14 @@
+{
+  "version": "DEMO-2026-01",
+  "notice": "以下是本项目自定义演示规则，不代表真实商家政策或法律规定。所有金额均为试算，不执行退款。",
+  "rules": [
+    {"id": "DEMO-E01", "category": "electronics", "category_name": "数码设备", "return_days": 7, "exchange_days": 15, "requires_unopened": true, "requires_tags": false, "return_supported": true, "text": "数码设备：签收当日为第0天，7天内未拆封可申请无理由退货；15天内质量问题可申请人工审核换货。已拆封或超期的无理由退货不符合本演示规则，质量问题转人工审核。"},
+    {"id": "DEMO-A01", "category": "accessories", "category_name": "普通配件", "return_days": 7, "exchange_days": 15, "requires_unopened": false, "requires_tags": false, "return_supported": true, "text": "普通配件：签收当日为第0天，7天内商品完好可申请无理由退货；15天内质量问题可申请人工审核换货。"},
+    {"id": "DEMO-C01", "category": "apparel", "category_name": "服饰", "return_days": 7, "exchange_days": 15, "requires_unopened": false, "requires_tags": true, "return_supported": true, "text": "服饰：签收当日为第0天，7天内未使用、商品完好且吊牌完整可申请无理由退货；15天内质量问题可申请人工审核换货。"},
+    {"id": "DEMO-D01", "category": "digital", "category_name": "数字商品", "return_days": 0, "exchange_days": 0, "requires_unopened": false, "requires_tags": false, "return_supported": false, "text": "数字商品：交付后不支持本演示中的无理由退货。无法使用等质量问题转人工审核，不直接判断退款金额。"}
+  ],
+  "shared": [
+    {"id": "DEMO-S01", "text": "退款基数为订单明细中已分摊优惠后的实付金额，金额以分存储。部分退货按单件分摊，余数从第1件起每件分配1分。试算只包含商品金额，不含原运费、寄回运费或额外补偿；这些费用需要另行确认。"},
+    {"id": "DEMO-S02", "text": "待发货订单可进行商品取消退款试算；运输中订单先联系商家处理拦截或退回。已签收订单按对应商品规则判断。质量问题与换货申请转人工审核。助手只查询和试算，不提交、审批或执行售后申请。"}
+  ]
+}
